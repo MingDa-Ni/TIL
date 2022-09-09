@@ -21,3 +21,5 @@
 * 웹 페이지의 확장자는 `html`이다.
 * 웹 페이지는 Ctrl+O를 통해 인터넷 브라우저에서 읽을 수 있다.
   - 크롬(Chorm) 기준으로 실습
+  - 아톰(Atom) 설치 후 하단의 HTML 설치
+![](https://github.com/MingDa-Ni/TIL/blob/master/images/HTML/html001.png)
