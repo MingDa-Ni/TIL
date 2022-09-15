@@ -7,7 +7,7 @@
   1. 모든 CSS를 외울 수 없기 때문에 검색 엔진 검색
   2. `css text size property` 키워드 검색
   3. CSS font-size property
-  ```
+```
   div.a {
     font-size: 15px;
   }
@@ -17,7 +17,7 @@
   div.c {
     font-size: 150%;
   }
-  ```
+```
    4. font-size를 이용한 글자 크기 변경
 ```
   <style>
@@ -30,7 +30,7 @@
  
   1. `css text center property` 키워드 검색
   2. CSS text-align Property
-  ```
+```
   div.a {
     text-align: center;
   }
@@ -43,14 +43,14 @@
   div.c {
     text-align: justify;
   }
-  ```
+```
    4. text-align을 이용한 텍스트 가운데 정렬
-  ```
+```
   h1 {
     font-size: 45px;
     text-align: center;
   }
-  ```
+```
 * 모든 프로퍼티를 암기하는게 아니라 `검색`하는 능력을 키우자
   
 ### CSS 선택자
