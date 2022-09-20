@@ -12,3 +12,5 @@
 * [Basic009](https://github.com/MingDa-Ni/TIL/blob/master/HTML/Basic/Basic009.md)
 * [Basic010](https://github.com/MingDa-Ni/TIL/blob/master/HTML/Basic/Basic010.md)
 * [Basic011](https://github.com/MingDa-Ni/TIL/blob/master/HTML/Basic/Basic011.md)
+* [Basic012](https://github.com/MingDa-Ni/TIL/blob/master/HTML/Basic/Basic012.md)
+* [Basic013](https://github.com/MingDa-Ni/TIL/blob/master/HTML/Basic/Basic013.md)
