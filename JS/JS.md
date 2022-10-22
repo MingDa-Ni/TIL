@@ -7,3 +7,4 @@
 * [VanillaJS004](https://github.com/MingDa-Ni/TIL/blob/master/JS/VanillaJS/VanillaJS004.md)
 * [VanillaJS005](https://github.com/MingDa-Ni/TIL/blob/master/JS/VanillaJS/VanillaJS005.md)
 * [VanillaJS006](https://github.com/MingDa-Ni/TIL/blob/master/JS/VanillaJS/VanillaJS006.md)
+* [VanillaJS007](https://github.com/MingDa-Ni/TIL/blob/master/JS/VanillaJS/VanillaJS007.md)

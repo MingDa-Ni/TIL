@@ -1,7 +1,7 @@
 # JS - VanillaJS
 ## 2022-10-22 Sat
 
-### element 찾기
+## element 찾기
 
 * 대전제
   - app.js가 import 되었기 때문에 가능
@@ -14,7 +14,7 @@
     4. 브라우저가 document에 접근할 수 있게 한다.
 
 * event
-  - object의 속성에 대한 내용 전부를 보고 싶다면 `console.dir`을 사용한다.
+  - object의 property에 대한 내용 전부를 보고 싶다면 `console.dir`을 사용한다.
   ```
   console.dir(object);
   ```
