@@ -14,4 +14,4 @@
 ## DeepDive
 ### 2022.10.28 ~ 2022.00.00 
 
-* [DeepDive](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/VanillaJS001.md)
+* [DeepDive](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive.md)
