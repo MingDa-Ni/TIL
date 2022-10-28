@@ -14,4 +14,4 @@
 ## DeepDive
 ### 2022.10.28 ~ 2022.00.00 
 
-* [DeepDive](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive001.md)
+* [DeepDive001](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive001.md)
