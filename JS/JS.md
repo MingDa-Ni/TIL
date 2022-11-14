@@ -18,3 +18,6 @@
 * [DeepDive002](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive002.md)
 * [DeepDive003](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive003.md)
 * [DeepDive004](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive004.md)
+* [DeepDive005](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive005.md)
+* [DeepDive006](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive006.md)
+* [DeepDive007](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive007.md)
