@@ -29,3 +29,4 @@
 * [DeepDive013](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive013.md)
 * [DeepDive014](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive014.md)
 * [DeepDive015](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive015.md)
+* [DeepDive016](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive016.md)

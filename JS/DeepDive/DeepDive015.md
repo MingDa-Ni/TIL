@@ -259,3 +259,75 @@ minda.last-name; // NaN
     delete minda.address;
     ```
 
+### ES6에서 추가된 객체 리터럴의 확장 기능
+
+#### 프로퍼티 축약 표현
+
+* 객체 리터럴의 프로퍼티는 키와 값으로 구성된다.
+  * 프로퍼티 값은 `변수에 할당된 값, 식별자 표현식`일 수도 있다.
+  ```
+  var x = 1, y = 2;
+  ```
+  ```
+  var obj = {
+    x: x,
+    y: y
+  };
+  ```
+  * 프로퍼티 값으로 `변수를 사용하는 경우 변수 이름과 프로퍼티 키가 동일하다면` 프로퍼티를 생략(property shorthand)할 수 있다.
+  ```
+  let x = 1, y = 2;
+  const obj = { x, y };
+  ```
+#### 계산된 프로퍼티 이름
+
+* 프로퍼티 키 동적 생성
+  * 문자열 또는 문자열로 타입 변환할 수 있는 값으로 평가되는 표현식을 사용한다.
+  * `프로퍼티 키를 무조건 대괄호([...])`로 묶어야 한다.
+  * 이를 계산된 프로퍼티 이름(computed property name)
+  ```
+  var prefix = 'day';
+  var i = 0;
+  ```
+  ```
+  var obj = {};
+
+  obj[prefix + '-' + ++i] = i;
+  obj[prefix + '-' + ++i] = i;
+  obj[prefix + '-' + ++i] = i;
+
+  console.log(obj); 
+  ```
+  ```
+  {day-1: 1, day-2: 2, day-3: 3}
+  ```
+* 객체 리터럴
+  * 내부에서도 프로퍼티 키를 동적 생성할 수 있다.
+  ```
+  const obj = {
+    [`${prefix}-${++i}`]: i,
+    [`${prefix}-${++i}`]: i,
+    [`${prefix}-${++i}`]: i
+  }
+  ```
+
+#### 메서드 축약 표현
+
+* 메서드를 정의하려면 `프로퍼티 값으로` 함수를 할당한다.
+```
+var obj = {
+  name: 'Hong',
+  sayHey: function() {
+    console.log('Hey!' + this.name)
+  }
+};
+```
+* ES6에서는 function 키워드를 생략할 수 있다.
+```
+var obj = {
+  name: 'Hong',
+  sayHey() {
+    console.log('Hey!' + this.name)
+  }
+};
+```
