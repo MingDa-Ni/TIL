@@ -7,17 +7,17 @@
   1. 한 단계까지만 복사하는 것 
        * 객체에 중첩되어 있는 객체의 경우 참조 값을 복사
        * 원본과는 다른 객체
-  ```
+  ```javascript
   const obj = { x: {y:1}};
 
   const a1 = {...obj};
   ```
-  ```
+  ```javascript
   console.log(a1===obj); // false
   console.log(a1.x===ojb.x); // true
   ```
   2. 객체를 할당한 변수를 다른 변수에 할당하는 것
-  ```
+  ```javascript
   const obj = {x:1};
 
   const a2 = obj;
@@ -28,17 +28,17 @@
   1. 객체에 중첩되어 있는 객체까지 모두 복사하는 것
        * 객체에 중첩되어 있는 객체까지 모두 복사해 `원시값처럼 완전한 복사본`
        * 원본과는 다른 객체
-  ```
+  ```javascript
   const obj = { x: {y:1}};
 
   const a2 = _.cloneDeep(obj);
   ```
-  ```
+  ```javascript
   console.log(a2===obj); // false
   console.log(a2.x===ojb.x); // false
   ```
   2. 원시 값을 할당한 변수를 다른 변수에 할당
-  ```
+  ```javascript
   const v = 3;
 
   const a1 = v;
@@ -46,7 +46,7 @@
 #### 참조에 의한 전달
 
 * 여러 개의 식별자가 하나의 객체를 공유한다는 것
-```
+```javascript
 var character = {
   name: 'Cream'
 };
@@ -72,7 +72,7 @@ var copy = character; // 얕은 복사
   * `포인터`가 존재하는 다른 언어의 `참조에 의한 전달`과 의미가 일치하지 않는다.
 
 * 마무리 퀴즈
-```
+```javascript
 var cha1 = {
   name: 'Lema'
 };
@@ -80,7 +80,7 @@ var cha2 = {
   name: 'Lema'
 };
 ```
-```
+```javascript
 console.log(cha1 === cha2);
 console.log(cha1.name === cha2.name);
 ```

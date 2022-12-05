@@ -64,7 +64,7 @@
     * 불리언 값을 반환한다.
     * `암묵적 타입 변환`을 통해 타입을 일치시킨 후 비교한다.
     * 결과를 예측하기 어렵고 실수하기 쉽다.
-    ```
+    ```javascript
     '0' == ''; // false
     0 == ''; // true
     0 == '0'; // true
@@ -77,10 +77,10 @@
     * 불리언 값을 반환한다.
     * `피연산자가 타입도 같고 값도 같은 경우에 한하여` true를 반환한다.
     * 주의할 것은 `0과 NaN`이다.
-    ```
+    ```javascript
     NaN === NaN; // false
     ```
-    ```
+    ```javascript
     0 === -0; // true
     0 == -0; // true 
     ```
@@ -88,7 +88,7 @@
   * `Number.isNaN`을 사용한다.
 * Object.is 메서드
   * 예측 가능한 정확한 비교 결과를 반환한다.
-  ```
+  ```javascript
   Object.is(-0, +0); // false
   Object.is(NaN, NaN); // true
   ```

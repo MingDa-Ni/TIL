@@ -57,7 +57,7 @@
 * 객체 리터럴
   * 가장 보편적인 방법이다.
   * `중괄호 ({...})` 내에 0개 이상의 프로퍼티를 정의한다.
-  ```
+  ```javascript
   var minda = {
     name: 'Hong',
     sayHallo: function() {
@@ -72,7 +72,7 @@
 
 * 프로퍼티
   * 객체는 `프로퍼티의 집합`이며, 프로퍼티는 `키와 값`으로 구성된다.
-  ```
+  ```javascript
   var minda = {
     // 프로퍼티 키는 name, 프로퍼티 값은 'Hong'
     name: 'Hong',
@@ -87,7 +87,7 @@
   * 식별자 네이밍 규칙을 준수하는 프로퍼티 키와 않은 프로퍼티 키는 차이가 있다.
     * `식별자 네이밍 규칙을 따르지 않는 이름에는 따옴표를 사용해야 한다.`
     * 번거롭기 때문에 식별자 네이밍 규칙을 준수하는 키를 사용할 것을 권장한다.
-    ```
+    ```javascript
     var minda = {
       firstName: 'Minda',
       `last-naem': 'Hong'
@@ -95,7 +95,7 @@
 
     console.log(minda);
     ```
-    ```
+    ```javascript
     var minda = {
       last-name: 'Hong' // SyntaxError: Unexpected token - 
     };
@@ -103,7 +103,7 @@
 * 동적 생성
   * 프로퍼티 키를 동적으로 생성할 수 있다.
   * 프로퍼티 키를 사용할 표현식을 `대괄호([...])`로 묶어야 한다.
-  ```
+  ```javascript
   var name = {};
   var key = 'clock';
 
@@ -116,7 +116,7 @@
   * 예약어를 프로퍼티 키로 사용해도 에러가 발생하지 않는다.
     * 에러 발생의 여지가 있으므로 권장하지 않는다.
   * 이미 존재하는 프로퍼티 키를 중복 선언하면 먼저 선언한 프로퍼티를 `덮어쓴다.`
-  ```
+  ```javascript
   var minda = {
     name: 'Lee',
     name: 'Hong'
@@ -130,7 +130,7 @@
   * 자바스크립트에서 `사용할 수 있는 모든 값`은 프로퍼티 값으로 사용할 수 있다.
   * 자바스크립트 함수 역시 일급 객체이니, `값으로 취급`할 수 있다.
   * 프로퍼티 값이 함수일 경우 일반 함수와 구분하기 위해 `메서드(method)`라고 부른다.
-  ```
+  ```javascript
   var circle = {
     radius: 3,
 
@@ -147,16 +147,16 @@
 * 프로퍼티에 접근하는 방법
   * 프로퍼티 키가 네이밍 규칙을 준수하면 `아래의 방식 모두 사용할 수 있다.` 
     1. 마침표 프로퍼티 접근 연산자(.)를 사용하는 `마침표 표기법(dot notation)`
-   ```
+   ```javascript
   console.log(minda.name);
    ```
     2. 대괄호 프로퍼티 접근 연산자([...])를 사용하는 `대괄호 표기법(bracket notation)`
-   ```
+   ```javascript
   console.log(minda['name']);
    ```
    * 이 때 대괄호 표기법 내부에 지정하는 프로퍼티 키는 `반드시 따옴표로 감싼 문자열`이어야 한다.
    * 따옴표로 감싸지 않으면 `자바스크립트 엔진이 식별자로 해석`한다.
-  ```
+  ```javascript
   var minda = {
     name: 'Hong'
   };
@@ -165,7 +165,7 @@
   ```
   * 객체에 존재하지 않는 프로퍼티에 접근하면 undefined를 반환한다.
     * ReferenceError가 발생하지 않는 것에 주의
-    ```
+    ```javascript
     var minda = {
       name: 'Hong'
     };
@@ -175,7 +175,7 @@
 * 대괄호 접근 연산자를 사용해야 할 때
   * 프로퍼티 키가 `식별자 네이밍 규칙`을 준수하지 않으면 무조건 `대괄호 표기법`을 사용해야 한다.
   * 단, 키가 `숫자로 이뤄진 문자열이라면 따옴표를 생략할 수 있다.`
-  ```
+  ```javascript
   var minda = {
     1: 23
   };
@@ -185,7 +185,7 @@
   ```
 
 * 예제
-```
+```javascript
 var minda = {
   `last-name`: 'Hong',
  };
@@ -194,7 +194,7 @@ minda.`last-name`; // SyntaxError: Unexpected string
 minda.last-name; // NaN
 minda[last-name]; // ReferenceError: last is no defined
 ```
-```
+```javascript
 minda.last-name; // NaN
 ```
   1. minda.last-name을 실행하면 엔진은 `먼저 minda.last를 평가`한다.
@@ -212,7 +212,7 @@ minda.last-name; // NaN
 
 * 갱신
   * 이미 존재하는 프로퍼티에 값을 할당하면 `값이 갱신된다.`
-  ```
+  ```javascript
   var minda = {
     name : 'Hong'
   };
@@ -228,7 +228,7 @@ minda.last-name; // NaN
   * `존재하지 않는 프로퍼티`에 값을 할당
     1. 프로퍼티가 동적으로 생성되어 추가
     2. 프로퍼티 값이 할당
-     ```
+     ```javascript
     var minda = {
       name : 'Hong'
     };
@@ -242,7 +242,7 @@ minda.last-name; // NaN
 
 * 삭제
   * delete 연산자는 객체의 프로퍼티를 삭제한다.
-  ```
+  ```javascript
   var minda = {
     name : 'Hong'
   };
@@ -255,7 +255,7 @@ minda.last-name; // NaN
    ```
   * delete의 피연산자는 프로퍼티 값에 접근할 수 있어야 한다.
     * 존재하지 않는 프로퍼티를 삭제하면 `아무런 에러 없이 무시`된다.
-    ```
+    ```javascript
     delete minda.address;
     ```
 
@@ -265,17 +265,17 @@ minda.last-name; // NaN
 
 * 객체 리터럴의 프로퍼티는 키와 값으로 구성된다.
   * 프로퍼티 값은 `변수에 할당된 값, 식별자 표현식`일 수도 있다.
-  ```
+  ```javascript
   var x = 1, y = 2;
   ```
-  ```
+  ```javascript
   var obj = {
     x: x,
     y: y
   };
   ```
   * 프로퍼티 값으로 `변수를 사용하는 경우 변수 이름과 프로퍼티 키가 동일하다면` 프로퍼티를 생략(property shorthand)할 수 있다.
-  ```
+  ```javascript
   let x = 1, y = 2;
   const obj = { x, y };
   ```
@@ -285,11 +285,11 @@ minda.last-name; // NaN
   * 문자열 또는 문자열로 타입 변환할 수 있는 값으로 평가되는 표현식을 사용한다.
   * `프로퍼티 키를 무조건 대괄호([...])`로 묶어야 한다.
   * 이를 계산된 프로퍼티 이름(computed property name)
-  ```
+  ```javascript
   var prefix = 'day';
   var i = 0;
   ```
-  ```
+  ```javascript
   var obj = {};
 
   obj[prefix + '-' + ++i] = i;
@@ -298,12 +298,12 @@ minda.last-name; // NaN
 
   console.log(obj); 
   ```
-  ```
+  ```javascript
   {day-1: 1, day-2: 2, day-3: 3}
   ```
 * 객체 리터럴
   * 내부에서도 프로퍼티 키를 동적 생성할 수 있다.
-  ```
+  ```javascript
   const obj = {
     [`${prefix}-${++i}`]: i,
     [`${prefix}-${++i}`]: i,
@@ -314,7 +314,7 @@ minda.last-name; // NaN
 #### 메서드 축약 표현
 
 * 메서드를 정의하려면 `프로퍼티 값으로` 함수를 할당한다.
-```
+```javascript
 var obj = {
   name: 'Hong',
   sayHey: function() {
@@ -323,7 +323,7 @@ var obj = {
 };
 ```
 * ES6에서는 function 키워드를 생략할 수 있다.
-```
+```javascript
 var obj = {
   name: 'Hong',
   sayHey() {

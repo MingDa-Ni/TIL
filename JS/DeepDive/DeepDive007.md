@@ -20,27 +20,27 @@
 * 모두 10진수로 해석된다.
 * 아래의 세 가지 타입도 표현할 수 있다.
   * Infinity
-  ```
+  ```javascript
   console.log(10 / 0);
   ```
   * -Infinity
-  ```
+  ```javascript
   console.log(10 / -0);
   ```
   * NaN : 대소문자 구별하므로 입력시 주의
-  ```
+  ```javascript
   console.log(1 * 'String');
   ```
 
 ### 문자열 타입
 
-```
+```javascript
 string = '민다니';
 ```
-```
+```javascript
 string = "민다니";
 ```
-```
+```javascript
 string = `민다니`;
 ```
 * 사용 이유

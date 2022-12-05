@@ -11,7 +11,7 @@
     * 문자열은 `몇 개의 문자로 이루어졌느냐에 따라 필요한 메모리 공간의 크기가 결정`
 * JS
   * 개발자의 편의를 위해 `원시 타입인 문자열 타입` 제공
-  ```
+  ```javascript
   var str = 'Hello';
   str str = 'world'
   ```
@@ -21,12 +21,12 @@
 * 원리
   * `식별자 str은 문자열 'Hello'를 가리키고 있다가 'world'를 가리키도록 변경된다.`
 * 불변성  
-  ```
+  ```javascript
   var str = 'main';
 
   str[0] = 'M';
   ```
-  ```
+  ```javascript
   console.log(str); // main
   ```
   * 문자열의 일부 문자를 변경해도 반영되지 않는다.
@@ -45,7 +45,7 @@
 
 #### 값에 의한 전달
 
-```
+```javascript
 var score = 60;
 var copy = score;
 
@@ -55,7 +55,7 @@ score = 100;
 
 console.log(score === copy);
 ```
-```
+```javascript
 console.log(score); // 100
 console.log(copy); // ?
 ```
@@ -82,7 +82,7 @@ console.log(copy); // ?
         1. 값을 구별한다는 것은 `식별자가 기억하고 있는 메모리 주소`를 통해 
         2. `메모리 공간에 저장된 값`에 접근해 구별한다는 것
         3. 따라서, 식별자는 `메모리 주소에 붙인 이름`
-    ```
+    ```javascript
     var a = 10;
     ```
       * 식별자 a는 메모리 공간에 저장된 숫자 값 10을 식별할 수 있다.

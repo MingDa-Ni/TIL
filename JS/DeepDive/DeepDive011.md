@@ -42,13 +42,13 @@
   * 조건에 따라 코드 블록을 늘릴 때 `else if`문을 사용한다.
   * else if와 else는 모두 옵션이다.
   * 코드 블록 내 문이 하나라면 `중괄호 생략`이 가능하다.
-  ```
+  ```javascript
   if (num > 0) 
     kind = 'positive';   
   ```
 * 삼항 조건 연산자
   * 대부분의 `if...else문`은 삼항 조건 연산자로 바꿀 수 있다.
-  ```
+  ```javascript
   num > 0 ? 'positive' : 'negative'
   ```
   * 삼항 조건 연산자는 표현식이다.

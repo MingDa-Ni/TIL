@@ -3,7 +3,7 @@
 
 ## 변수와 메모리
 
-``` 
+```javascript 
 var add = 2 + 3;
 ```
 * add
@@ -64,7 +64,7 @@ var add = 2 + 3;
       * var 키워드를 만나면 새로운 변수를 선언한다.
 
 * 변수 선언
-  ```
+  ```javascript
   var temp;
   ```
   * 변수 이름을 등록하고 메모리 공간을 확보한다.
@@ -78,7 +78,7 @@ var add = 2 + 3;
 ### 변수 선언의 실행 시점
 
 * 코드 에러가 안 나는 이유
-  ```
+  ```javascript
   console.log(temp);
   var temp;
   ```
@@ -96,7 +96,7 @@ var add = 2 + 3;
 ### 값의 할당
 
 * 값의 할당
-  ```
+  ```javascript
   var temp = 40;
   ```
   * 하나의 문장으로 표현해도 2개의 문장으로 나누어 실행한다.
@@ -106,7 +106,7 @@ var add = 2 + 3;
     * undefined가 저장된 메모리 공간을 지우는 것이 아니다.
 * 값의 재할당
   * 변수에 새로운 값을 재할당
-  ```
+  ```javascript
   var temp = 40;
   temp = 50;
   ```

@@ -15,7 +15,7 @@
     * 따라서 원시 값과 다른 방식으로 동작하도록 설계되어 있다.
 * `변경 가능한 값`
   * 객체는 `변경 가능한 값(mutable value)`이다.
-  ```
+  ```javascript
   var person = {
     name: 'Hong'
   };

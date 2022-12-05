@@ -21,7 +21,7 @@
     3. 예약어는 식별자로 사용할 수 없다.
   * 변수 이름도 `네이밍 규칙`을 따라야 한다.
   * 자바스크립트는 대소문자를 구별한다.
-    ```
+    ```javascript
     var firstname;
     var firstName;
     ```
@@ -30,12 +30,12 @@
 * 네이밍 컨벤션(naming convention)
   * 변수나 함수 
     * 카멜 케이스(camelCase)
-    ```
+    ```javascript
     var firstName;
     ```
   * 생성자 함수와 클래스 이름
     * 파스칼 케이스(PascalCase)
-    ```
+    ```javascript
     var FirstName;
     ```
  

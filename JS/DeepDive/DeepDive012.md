@@ -16,7 +16,7 @@
 * 조건식
   * `거짓으로 평가될 때까지` 코드 블록 반복 실행
   * for문의 i 변수는 반복을 의미하는 iteration의 i이다.
-  ```
+  ```javascript
   for(변수 선언문; 조건식; 증감식;)
   ```
   * for문의 변수 선언문, 조건식, 증감식은 옵션이다.
@@ -28,7 +28,7 @@
 * 조건식
   * `평가 결과가 참이면` 코드 블록을 반복 실행한다.
   * 조건식 평가 결과가 `불리언 값이 아니라면` 불리언 값으로 강제 변환
-  ```
+  ```javascript
   var count = 0;
 
   while (count < 2) {
@@ -37,7 +37,7 @@
   }
   ```
   * 조건식의 평가 결과가 언제나 참이면 무한루프
-  ```
+  ```javascript
   while (true) { ... }
   ```
 * 구분
@@ -50,7 +50,7 @@
 * 조건식
   * 코드 블록을 초기에 `먼저 실행`하고 조건식을 평가
   * 무조건 1회는 실행된다.
-  ```
+  ```javascript
   var count = 0;
 
   do {
@@ -64,13 +64,13 @@
     * 그 외에 사용하면 `SyntaxError(문법 에러)`가 발생한다.
   * 레이블 문(label statement)
     * 식별자가 붙은 문이다.
-    ```
+    ```javascript
     kind : console.log('kind');
     ```
     * 실행 순서를 제어하는데 사용한다.
     * case문과 default문도 레이블 문이다.
     * 중첩된 for문에서 `외부 for문을 탈출`하려면 레이블 문을 사용한다.
-    ```
+    ```javascript
     outer : for(var i=0; i<5; i++) {
       for (var j = 0; j < 5; j++) {
         if (i+j === 5) break outer;
@@ -84,7 +84,7 @@
 * countinue문  
   * 반복문의 코드 블록 실행을 `현 지점에서 중단`하고 증감식으로 실행 흐름을 이동
     * 반복문을 탈출하는 개념이 아니다.
-  ```
+  ```javascript
   var string = 'Mindani Haru';
   var serch = 'i';
   var count = 0;

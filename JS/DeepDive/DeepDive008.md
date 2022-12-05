@@ -8,14 +8,14 @@
   * null 할당의 의미
     * 변수가 이전에 참조하던 값을 더 이상 참조하지 않겠다.
       1. 이전에 할당된 값을 `명시적으로 제거`
-      ```
+      ```javascript
       var firstName = 'Lee';
       // 이전 참조를 제거하여 더 이상 Lee를 참조하지 않는다.
       // 변수의 스코프를 좁게 만들어 변수를 재빨리 소멸
       firstName = null;
       ```
       2. 함수가 `유효한 값`을 반환할 수 없는 경우
-      ```
+      ```javascript
       var element = document.querySelector('.myClass'); // myClss 요소가 없다면
       console.log(element); // null 반환
       ```
@@ -30,7 +30,7 @@
 * 사용법
   * 심벌은 `Symbol 함수`를 통해 생성한다.
   * 이때 심벌값은 외부에 노출하지 않으며, 절대 중복되지 않는다.
-  ```
+  ```javascript
   var key = Symbol('key');
   console.log(typeof key);
   ```

@@ -31,7 +31,7 @@
 #### 문자열 타입으로 변환
 
 * 예제
-  ```
+  ```javascript
   1 + '3' // 13
   ```
   * `+ 연산자`는 `피연산자 중 하나 이상이 문자열`이므로 문자열 연결 연산자로 동작한다.
@@ -39,29 +39,29 @@
 * 주의
   * 피연산자만 암묵적 타입 변환의 대상인 것은 아니다.
   * 템플릿 리터럴의 경우, `표현식 평가 결과`를 문자열 타입으로 암묵적 변환한다.
-  ```
+  ```javascript
   '1 + 1 = ${1 + 1}` // "1 + 1 = 2"
   ```
 * 동작 예시
-  ```
+  ```javascript
   (Symbol()) + '' // TypeError
   ```
-  ```
+  ```javascript
   ({}) + `` // "[object Object]"
   ```
-  ```
+  ```javascript
   Math + `` // "[object Math]"
   ```
-  ```
+  ```javascript
   [] + `` // ""
   ```
-  ```
+  ```javascript
   [10, 20] + `` // "10, 20"
   ```
-  ```
+  ```javascript
   (function(){}) + `` // "function(){}"
   ```
-  ```
+  ```javascript
   Array + `` // "function Array() { [native code] }"
   ```
 
@@ -69,7 +69,7 @@
 #### 숫자 타입으로 변환
 
 * 예제
-  ```
+  ```javascript
   1 - '1' // 0
   1 * '10' // 10
   1 / 'one' // NaN
@@ -77,26 +77,26 @@
   * 산술 연산자의 모든 피연산자는 `코드 문맥상 모두 숫자 타입`이어야 한다.
   * 피연산자를 숫자 타입으로 변환할 수 없으면 연산 수행이 불가해 `NaN`이 된다.
   * 비교연산자 역시 마찬가지다.
-    ```
+    ```javascript
     '1' > 0 // true
     ```
     * 문맥상 숫자 타입이어야하므로 `암묵적 타입 변환`한다.
     * `+ 단항 연산자` 역시 암묵적 타입 변환을 수행한다.
-    ```
+    ```javascript
     +'' // 0
     +'1' // 1
     ```
-    ```
+    ```javascript
     +'string' // NaN
     ```
-    ```
+    ```javascript
     +null // 0
     +undefined //NaN
     ```
-    ```
+    ```javascript
     +Symbol() // TypeError
     ```
-    ```
+    ```javascript
     +{} // NaN
     +[] // 0
     +[10, 20] // NaN
@@ -109,14 +109,14 @@
   * `제어문` 또는 `삼항 조건 연산자`는 논리적 참/거짓으로 평가되어야하므로 암묵적 타입 변환된다.
   * 이때 자바스크립트 엔진은 `불리언 타입이 아닌 값을 Truthy 값 또는 Falsy 값으로 구분한다.`
     * Truthy는 true로, Falsy는 false로 암묵적 타입 변환한다.
-    ``` 
+    ```javascript
     if ('sty') console.log('1');
 
     // 1
     ```
 * 예제
   * 아래는 모두 false 평가된다.
-  ```
+  ```javascript
   if (!false)
   if (!undefined)
   if (!null)
@@ -126,19 +126,19 @@
   ```
 * isFalsy
   * 다음은 Falsy를 판별하는 함수이다.
-  ```
+  ```javascript
   function isFalsy(v) {
     return !v;
   }
   ```
 * isTruthy
   * 다음은 Truthy를 판별하는 함수다.
-  ```
+  ```javascript
   function isTruthy(v) {
     return !!v;
   }
   ```
-  ```
+  ```javascript
   isTruthy({});
   isTruthy([]);
 
