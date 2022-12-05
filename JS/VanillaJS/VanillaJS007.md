@@ -5,7 +5,7 @@
 
 * MDN
   - elment의 이름을 `MDN`에 검색한다.
-  ```
+  ```javascript
   h1 html element mdn
   ```
   - `Web APIs`
@@ -18,22 +18,22 @@
 
 * event 사용의 두 가지 방법
   1. addEventListener
-  ```
+  ```javascript
   title.addEventListener("click", handleTitleClick);
   ```
   2. onclieck
-  ```
+  ```javascript
   title.onclieck = handleTitleClick;
   ```
   - addEventListener은 `removeEventListener`로도 삭제 가능하다.
-  ```
+  ```javascript
   title.addEventListener("mouseleave", handleMouseLeave);
   title.removeEventListener;
   ```
 
 * window
   - 기본적으로 제공된다.
-  ```
+  ```javascript
   window.addEventListener("resize",handleWindowResize);
   ```
   - resize event는 창 크기를 바꿀 때 발생하는 event다.

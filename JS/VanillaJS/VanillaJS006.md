@@ -5,7 +5,7 @@
 
 * 대전제
   - app.js가 import 되었기 때문에 가능
-  ```
+  ```javascript
   <script src='app.js'></script>
   ```
     1. app.js 덕분에 javascript가 html을 가져올 수 있다.
@@ -15,7 +15,7 @@
 
 * event
   - object의 property에 대한 내용 전부를 보고 싶다면 `console.dir`을 사용한다.
-  ```
+  ```javascript
   console.dir(object);
   ```
   - on으로 시작하는 것은 모두 이벤트다.
@@ -26,11 +26,11 @@
  
 * `event listen`
   1. element 가져오기
-  ```
+  ```javascript
   const title = document.querySelector("div.hello:first-child h1");
   ```
   2. `click event`
-  ```
+  ```javascript
   function handleTitleClick(){
     console.log("title waw clicked!");
   }

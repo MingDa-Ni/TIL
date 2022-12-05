@@ -5,12 +5,12 @@
 
 - 카멜케이스
   - 단어에 공백이 필요하면 `다음 단어의 첫 문자를 대문자`로 쓴다.
-  ```
+  ```javascript
   myName
   veryLongName
   ```
   - 파이썬은 스네이크 케이스다.
-  ```
+  ```javascript
   very_long_name
   ```
 

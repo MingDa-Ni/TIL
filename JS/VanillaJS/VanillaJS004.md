@@ -4,7 +4,7 @@
 ### return
 
 * 데이터를 얻어 응용할 수 있다.
-  ```
+  ```javascript
   const calculator = {
    plus : function(a, b){
      return a+b;
@@ -12,7 +12,7 @@
   }
   ```
   - return하면 함수는 그대로 끝난다.
-  ```
+  ```javascript
    plus : function(a, b){
      return a+b;
      console.log('minda');
@@ -24,7 +24,7 @@
 
 * parseInt()
   - 첫 번째 인자를 문자열로 반환해 `NaN`이나 `정수`를 반환한다.
-  ```
+  ```javascript
   const age = parseInt(prompt("How old are you?"));
   ```
   - prompt에 입력 받을 숫자가 parseInt() 처리된다.
@@ -35,7 +35,7 @@
     1. NaN == NaN
     2. NaN === NaN
     - 둘 모두 false 처리
-  ```
+  ```javascript
   if(isNaN(age)){
     console.log("Please write a number");
   } else {
@@ -43,7 +43,7 @@
   }
   ```
 * `복잡`한 conditionals
-  ```
+  ```javascript
   if ((a&&b) || (c&&d)) { 
   }
   ```
