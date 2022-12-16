@@ -11,7 +11,28 @@
 
 * 적절한 인수가 전달되었는지 확인
   1. 상위 확장을 도입해 `컴파일 시점`에 부적절한 호출 방지
+  ```
+  if (typeof x ! == 'number' || typeof y !== 'number')
+  {
+    throw new TypeError('경고문구');
+  }
+  ```
   2. `arguments 객체`를 통해 인수 개수 확인
+  3. `단축 평가`를 통해 기본값 할당
+  ```
+  function add(a,b,c) {
+    a = a || 0;
+    b = b || 0;
+    c = c || 0;
+    return a + b + c;
+  }
+  ```
+  4. ES6 도입된 매개변수 기본값(인수 체크 및 초기화 간소화)
+  ```
+  function plus(a=0, b=0, c=0){
+    return a + b + c;
+  }
+  ```
 
 #### 매개변수의 최대 개수
 * 매개변수의 최대 개수 
