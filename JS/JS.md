@@ -12,7 +12,7 @@
 * [VanillaJS009](https://github.com/MingDa-Ni/TIL/blob/master/JS/VanillaJS/VanillaJS009.md)
 
 ## DeepDive
-### 2022.10.28 ~ 2022.00.00 
+### 2022.10.28 ~ 2022.12.27 
 
 * [DeepDive001](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive001.md)
 * [DeepDive002](https://github.com/MingDa-Ni/TIL/blob/master/JS/DeepDive/DeepDive002.md)
